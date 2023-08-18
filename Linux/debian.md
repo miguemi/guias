@@ -11,3 +11,8 @@ WantedBy=graphical.target
 # finally enable gdm
 sudo systemctl enable gdm  && sudo systemctl enable gdm3
 ```
+# Disable Bell GNOME
+
+```bash
+dconf write /org/gnome/desktop/sound/event-sounds "false" 
+```
