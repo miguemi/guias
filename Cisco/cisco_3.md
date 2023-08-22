@@ -43,3 +43,9 @@ acces-list 1 any
 int g0/0
 ip access-group 1 out
 ```
+
+```bash
+# ACL Extendido
+access-list 100 permit tcp 192.168.100.0  0.0.0.255 host 192.168.30.5  eq 80
+access-list 100 deny ip any any
+```
